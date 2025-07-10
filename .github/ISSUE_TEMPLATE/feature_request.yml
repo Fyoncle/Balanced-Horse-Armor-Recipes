@@ -1,0 +1,25 @@
+name: Suggestion
+description: 'Request a mod to add compatibility with!'
+title: '[Suggestion]: '
+assignees:
+  - Fyoncle
+labels:
+  - suggestion
+body:
+  - type: input
+    id: mod_name
+    attributes:
+      label: Mod Name
+      description: What mod should be added for compatibility?
+      placeholder: Simple Netherite Horse Armor
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the name of the horse armor you want compat for?
+      description: MOD_ID and ITEM_ID like "mybeautifulmod:burning_horse_armor"
+      placeholder: >-
+        This mod adds a new Horse Armor that would be nice to have a recipe for.
+    validations:
+      required: true
