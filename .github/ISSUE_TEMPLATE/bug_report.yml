@@ -1,0 +1,51 @@
+name: Bug Report
+description: 'Something is not working.'
+title: '[Bug]: '
+assignees:
+  - Fyoncle
+labels:
+  - bug
+body:
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft Version
+      description: Which Minecraft version are you playing on?
+      placeholder: 1.20.1
+    validations:
+      required: true
+  - type: input
+    id: bhar_version
+    attributes:
+      label: Balanced Horse Armor Recipes Version
+      description: >-
+        Which version of BHAR are you using?
+      placeholder: v1.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear explanation of the bug.
+      placeholder: >-
+        Version v1.x not working on Minecraft 1.2x.x
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Required steps to reproduce the bug.
+      placeholder: |
+        1. Install BHAR on Minecraft 1.x.x
+        2. Join a world
+        3. See this recipe is not working on this version
+  - type: input
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: |
+        Please upload the log file to [mclo.gs](https://mclo.gs/) and paste the given url here.  
+      placeholder: https://mclo.gs/...
